@@ -16,6 +16,11 @@ module.exports = {
       },
       storyId: {
         type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: "stories",
+          key: "id",
+        },
       },
       createdAt: {
         allowNull: false,
