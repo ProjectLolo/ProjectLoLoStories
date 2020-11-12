@@ -13,6 +13,6 @@ csv()
     const formattedArrayObj = first10Indexes.map((story) => {
       const narrativeParagraphed = story.Narrative.split("\n");
       const test = { ...story, Narrative: narrativeParagraphed };
-      console.log(test);
+      //   console.log(test);
     });
   });
