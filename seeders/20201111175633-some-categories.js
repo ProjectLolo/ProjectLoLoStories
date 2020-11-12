@@ -4,12 +4,22 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert("categories", [
       {
-        category: "Animals",
+        category: "Fun",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        category: "Food",
+        category: "Memory",
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        category: "Teach",
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        category: "Activate",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
