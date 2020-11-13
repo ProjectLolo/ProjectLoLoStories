@@ -1,18 +1,20 @@
 const fs = require("fs");
 const csv = require("csvtojson");
 const path = require("path");
-const filePath = path.join(__dirname, "20201111_Content_table_v2 - Sheet2.csv");
+const fileName = "stories.csv";
+// console.log("my filepath", filePath);
 
-console.log("my filepath", filePath);
-
-csv()
-  .fromFile(filePath)
-  .then((jsonArrayObj) => {
-    // console.log("parsed csv", jsonArrayObj);
-    first10Indexes = jsonArrayObj.slice(0, 10);
-    const formattedArrayObj = first10Indexes.map((story) => {
-      const narrativeParagraphed = story.Narrative.split("\n");
-      const test = { ...story, Narrative: narrativeParagraphed };
-      //   console.log(test);
+const csvParser = async (fileName) => {
+  const filePath = path.join(__dirname, fileName);
+  return await csv()
+    .fromFile(filePath)
+    .then((jsonArrayObj) => {
+      const formattedArrayObj = jsonArrayObj.map((story) => {
+        const narrativeParagraphed = story.Narrative.split("\n");
+        return { ...story, Narrative: narrativeParagraphed };
+      });
+      return formattedArrayObj;
     });
-  });
+};
+
+module.exports = { csvParser };
