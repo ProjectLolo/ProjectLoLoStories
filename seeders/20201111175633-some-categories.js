@@ -9,12 +9,12 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        category: "Memory",
+        category: "Teach",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        category: "Teach",
+        category: "Memory",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
