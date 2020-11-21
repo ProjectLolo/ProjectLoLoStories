@@ -14,6 +14,7 @@ module.exports = {
     dialect: "mysql",
   },
   production: {
-    use_env_variable: "postgres://lbysztap:15XQIihmVlJPTUjK5AHr-a6jm1Hf1KRR@kandula.db.elephantsql.com:5432/lbysztap",
+    url: "postgres://lbysztap:15XQIihmVlJPTUjK5AHr-a6jm1Hf1KRR@kandula.db.elephantsql.com:5432/lbysztap",
+    use_env_variable: "DATABASE_URL",
   },
 };
