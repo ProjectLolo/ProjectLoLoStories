@@ -2,7 +2,7 @@ require("dotenv").config();
 
 module.exports = {
   development: {
-    url: process.env.DATABASE_DEV,
+    url: "postgres://lbysztap:15XQIihmVlJPTUjK5AHr-a6jm1Hf1KRR@kandula.db.elephantsql.com:5432/lbysztap",
     dialect: "postgres",
     operatorsAliases: "0",
   },
@@ -14,6 +14,6 @@ module.exports = {
     dialect: "mysql",
   },
   production: {
-    use_env_variable: "DATABASE_URL",
+    use_env_variable: "postgres://lbysztap:15XQIihmVlJPTUjK5AHr-a6jm1Hf1KRR@kandula.db.elephantsql.com:5432/lbysztap",
   },
 };
