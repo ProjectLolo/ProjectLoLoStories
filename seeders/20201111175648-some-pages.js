@@ -4,6 +4,7 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert("pages", [
       {
+        page: 1,
         content: "This would be the first story, page 1",
         image: "This would be the image for the first story, page 1",
         storyId: 1,
@@ -11,6 +12,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        page: 2,
         content: "This would be the first story, page 2",
         image: "This would be the image for the first story, page 2",
         storyId: 1,
@@ -18,6 +20,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        page: 3,
         content: "This would be the first story, page 3",
         image: "This would be the image for the first story, page 3",
         storyId: 1,
@@ -25,6 +28,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        page: 4,
         content: "This would be the first story, page 4",
         image: "This would be the image for the first story, page 4",
         storyId: 1,
@@ -32,6 +36,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        page: 5,
         content: "This would be the first story, page 5",
         image: "This would be the image for the first story, page 5",
         storyId: 1,
@@ -39,6 +44,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        page: 6,
         content: "This would be the first story, page 6",
         image: "This would be the image for the first story, page 6",
         storyId: 1,
@@ -46,6 +52,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        page: 7,
         content: "This would be the first story, page 7",
         image: "This would be the image for the first story, page 7",
         storyId: 1,
@@ -53,6 +60,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        page: 8,
         content: "This would be the first story, page 8",
         image: "This would be the image for the first story, page 8",
         storyId: 1,
@@ -60,6 +68,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        page: 9,
         content: "This would be the first story, page 9",
         image: "This would be the image for the first story, page 9",
         storyId: 1,
@@ -67,6 +76,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        page: 10,
         content: "This would be the first story, page 10",
         image: "This would be the image for the first story, page 10",
         storyId: 1,
@@ -74,6 +84,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        page: 1,
         content: "This would be the second story, page 1",
         image: "This would be the image for the second story, page 1",
         storyId: 2,
@@ -81,6 +92,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        page: 2,
         content: "This would be the second story, page 2",
         image: "This would be the image for the second story, page 2",
         storyId: 2,
@@ -88,6 +100,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        page: 3,
         content: "This would be the second story, page 3",
         image: "This would be the image for the second story, page 3",
         storyId: 2,
@@ -95,6 +108,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        page: 4,
         content: "This would be the second story, page 4",
         image: "This would be the image for the second story, page 4",
         storyId: 2,
@@ -102,6 +116,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        page: 5,
         content: "This would be the second story, page 5",
         image: "This would be the image for the second story, page 5",
         storyId: 2,
@@ -109,6 +124,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        page: 6,
         content: "This would be the second story, page 6",
         image: "This would be the image for the second story, page 6",
         storyId: 2,
@@ -116,6 +132,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        page: 7,
         content: "This would be the second story, page 7",
         image: "This would be the image for the second story, page 7",
         storyId: 2,
@@ -123,6 +140,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        page: 8,
         content: "This would be the second story, page 8",
         image: "This would be the image for the second story, page 8",
         storyId: 2,
